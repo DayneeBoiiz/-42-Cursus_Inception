@@ -1,0 +1,5 @@
+CREATE DATABASE if not exists wp_DataBase;
+CREATE USER 'FixGree'@'%';
+GRANT ALL PRIVILEGES ON wp_DataBase.* to 'FixGree'@'%' IDENTIFIED BY '4444';
+alter user 'root'@'localhost' identified by '4444';
+FLUSH PRIVILEGES;
